@@ -1,4 +1,5 @@
-export LOGFILE=/tmp/install-check-2.log
+export NOW=$(date +"%Y-%m-%d_%H:%M:%S")
+export LOGFILE=/tmp/install-check-$NOW.log
 export CLUSTER_DIR=/opt/icp-install/cluster
 export ICP_VERSION=2.1.0.2
 cd $CLUSTER_DIR
