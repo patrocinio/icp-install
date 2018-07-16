@@ -1,4 +1,4 @@
-export CLUSTER_DIR=/opt/icp-install/cluster
+export CLUSTER_DIR=/opt/icp-install
 export ICP_VERSION=2.1.0.3
 
 mkdir -p $CLUSTER_DIR
