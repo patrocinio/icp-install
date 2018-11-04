@@ -3,5 +3,5 @@ export LOGFILE=/tmp/install-$NOW.log
 export CLUSTER_DIR=/opt/ibm/cluster
 export ICP_VERSION=3.1.0
 cd $CLUSTER_DIR
-sudo docker run -e LICENSE=accept --net=host --rm -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:$ICP_VERSION-ee install -vvv | tee $LOGFILE
+sudo docker run -e LICENSE=accept --net=host --rm -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:$ICP_VERSION install -vvv | tee $LOGFILE
 
